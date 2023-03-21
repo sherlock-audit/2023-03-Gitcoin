@@ -74,4 +74,24 @@ A: [ACCEPTABLE/NOT ACCEPTABLE]
 
 # Audit scope
 
+
+[contracts @ 36dc33762c396660c0a84f6ef7d790f632638e81](https://github.com/allo-protocol/contracts/tree/36dc33762c396660c0a84f6ef7d790f632638e81)
+- [contracts/contracts/payoutStrategy/IPayoutStrategy.sol](contracts/contracts/payoutStrategy/IPayoutStrategy.sol)
+- [contracts/contracts/payoutStrategy/MerklePayoutStrategy/MerklePayoutStrategyFactory.sol](contracts/contracts/payoutStrategy/MerklePayoutStrategy/MerklePayoutStrategyFactory.sol)
+- [contracts/contracts/payoutStrategy/MerklePayoutStrategy/MerklePayoutStrategyImplementation.sol](contracts/contracts/payoutStrategy/MerklePayoutStrategy/MerklePayoutStrategyImplementation.sol)
+- [contracts/contracts/program/ProgramFactory.sol](contracts/contracts/program/ProgramFactory.sol)
+- [contracts/contracts/program/ProgramImplementation.sol](contracts/contracts/program/ProgramImplementation.sol)
+- [contracts/contracts/projectRegistry/ProjectRegistry.sol](contracts/contracts/projectRegistry/ProjectRegistry.sol)
+- [contracts/contracts/round/IRoundFactory.sol](contracts/contracts/round/IRoundFactory.sol)
+- [contracts/contracts/round/IRoundImplementation.sol](contracts/contracts/round/IRoundImplementation.sol)
+- [contracts/contracts/round/RoundFactory.sol](contracts/contracts/round/RoundFactory.sol)
+- [contracts/contracts/round/RoundImplementation.sol](contracts/contracts/round/RoundImplementation.sol)
+- [contracts/contracts/settings/AlloSettings.sol](contracts/contracts/settings/AlloSettings.sol)
+- [contracts/contracts/utils/MetaPtr.sol](contracts/contracts/utils/MetaPtr.sol)
+- [contracts/contracts/votingStrategy/IVotingStrategy.sol](contracts/contracts/votingStrategy/IVotingStrategy.sol)
+- [contracts/contracts/votingStrategy/QuadraticFundingStrategy/QuadraticFundingVotingStrategyFactory.sol](contracts/contracts/votingStrategy/QuadraticFundingStrategy/QuadraticFundingVotingStrategyFactory.sol)
+- [contracts/contracts/votingStrategy/QuadraticFundingStrategy/QuadraticFundingVotingStrategyImplementation.sol](contracts/contracts/votingStrategy/QuadraticFundingStrategy/QuadraticFundingVotingStrategyImplementation.sol)
+
+
+
 # About [project name]
