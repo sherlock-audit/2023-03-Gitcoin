@@ -1,0 +1,12 @@
+node_modules
+.env
+coverage
+coverage.json
+typechain
+/.eslintcache
+.turbo
+
+# Hardhat files
+cache
+artifacts
+abis/
