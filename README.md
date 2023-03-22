@@ -10,7 +10,7 @@ Allo Protocol has three main components to it:
 
 1. **A Project Registry.** This is the universal, on-chain registry of projects. To
    apply to be a grantee in any round, a project has to first register in the Project
-   Registry on the same chain as the round.
+   Registry.
 2. **Programs.** Each grant-giving organization will have an on-chain program, which
    manages it's rounds.
 3. **Rounds.** A pool of funds to be distributed based on a custom voting
@@ -20,8 +20,7 @@ Allo Protocol has three main components to it:
 
 Before applying to participate in a grants round, a project (a grant-receiving
 wallet address, representing an individual or a group) must register in the
-Project Registry. They must register in the Project Registry on the chain where
-the grant round is being held.
+Project Registry.
 
 ## Rounds
 
