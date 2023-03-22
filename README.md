@@ -25,10 +25,18 @@ Project Registry.
 ## Rounds
 
 Funding to be distributed through Allo Protocol are held in the Round, which
-consists of a voting strategy and a payout strategy. A voting strategy is a smart
+consists of a voting strategy and a payout strategy.
+A voting strategy is a smart
 contract that encodes how a community would like to decide to allocate the
-funds held in a round. A payout strategy is a smart contract that controls how
+funds held in a round. 
+A payout strategy is a smart contract that controls how
 the funds are distributed when the round ends.
+
+Note: 
+- Funds are originally sent to the round.
+- The funds are sent from the round to payout contract after the 
+  distribuion is final and round has ended
+- Fund can be native / ERC20 token
 
 ### Voting Strategy
 
@@ -100,9 +108,10 @@ In a Payout Strategy, the Round Operator is a community-trusted role, set when
 the Payout Strategy contract is deployed.
 
 Certain actions in the Payout Strategy are restricted to addresses with the
-Round Operator role. This includes updating the payout distribution
-(`updateDistribution()`) and withdrawing any extra funds from the matching pool
-(`withdrawFunds()`).
+Round Operator role. This includes 
+- updating the payout distribution (`updateDistribution()`) 
+- withdrawing any extra funds from the matching pool(`withdrawFunds()`)
+- paying out the projects (`payout()`)
 
 B: Program Implementation Program Operator
 
@@ -123,6 +132,11 @@ key functional methods on the round:
 - `withdraw()`: Used to withdraw ("rescue") any funds transferred to the
     matching pool by mistake that are not meant to be distributed in the grant
     round
+
+Other functions around upating the round are restricted to the Round Operator
+role and cannot be invoked after the round ends which include
+- updating the round metadata, start - end data
+- updating the round amount  
 
 ___
 ### Q: Are there any off-chain mechanisms or off-chain procedures for the protocol (keeper bots, input validation expectations, etc)? 
